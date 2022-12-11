@@ -1,7 +1,23 @@
 .portfolio__btn-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-bottom: 40px;
+  max-width: 350px;
+
+  @media (min-width: 768px){
+    max-width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio__btn-item--margin{
+    margin-bottom: 15px;
+
+    @media (min-width: 768px){
+      margin-bottom: 0;
+    }
 }
 
 .portfolio__btn {
@@ -70,8 +86,23 @@
 }
 
 .works-list__thumb {
-  position: relative;
   overflow: hidden;
+
+  @media (min-width: 768px){
+    position: relative;
+    }
+}
+
+.works-list__img{
+  @media (min-width: 768px){
+    width: 354px;
+    height: 294px;
+    }
+  
+    @media (min-width: 1200px){
+      width: 370px;
+      height: 294px;
+    }
 }
 
 .work__title {
@@ -80,6 +111,10 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  @media (min-width: 768px){
+    max-width: 306px;
+    }
 }
 
 .work__text {

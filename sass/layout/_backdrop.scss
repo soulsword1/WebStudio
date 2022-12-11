@@ -9,7 +9,8 @@
     visibility: visible;
     background: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms $cubic, transform 250ms $cubic,
-      visibility 250ms $cubic;
+    visibility 250ms $cubic;
+    overflow-y: scroll;
   }
   
   .modal {
@@ -37,21 +38,23 @@
     position: absolute;
     top: 0;
     right: 0;
-    margin: 8px 8px 0 0;
-  
     width: 30px;
     height: 30px;
+    margin: 8px 8px 0 0;
   
-    background: $white-color;
+    background-color: $white-color;
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-  }
-  
-  .modal__close-svg {
-    width: 11px;
-    height: 11px;
 
+    
+  }
+
+
+  .modal__close-svg{
+    position: absolute;
+    top: -1px;
+    right: -1px;
     .modal__btn:hover &,
     .modal__btn:focus & {
       fill: $active-color;
