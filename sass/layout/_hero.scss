@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/team_mobile.jpg");
+    url("../images/team_mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -22,7 +22,7 @@
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ),url("../../images/team_mobile@2x.jpg");
+    ),url("../images/team_mobile@2x.jpg");
   }
 
   @media (min-width: 768px) and (max-width: 1199px) {
@@ -31,7 +31,7 @@
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ),url("../../images/team_laptop.jpg");
+    ),url("../images/team_laptop.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -41,7 +41,7 @@
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-      ),url("../../images/team_laptop@2x.jpg");
+      ),url("../images/team_laptop@2x.jpg");
     }
   }
 
@@ -51,7 +51,7 @@
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ),url("../../images/team_pc.jpg");
+    ),url("../images/team_pc.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -61,7 +61,7 @@
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
-      ),url("../../images/team_pc@2x.jpg");
+      ),url("../images/team_pc@2x.jpg");
     }
   }
 }
