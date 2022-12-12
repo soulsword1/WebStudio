@@ -3,7 +3,6 @@
   padding: 200px 0;
   min-width: 480px;
 
-  // background-color: $sub-background;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -15,39 +14,59 @@
   background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url('../../images/team_mobile@2x.jpg');
-}
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),url("../../images/team_mobile@2x.jpg");
+  }
 
-  @media (min-width: 768px) and (max-width: 1199px){
+  @media (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
-    background-image: url("../../images/team_laptop.jpg");
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),url("../../images/team_laptop.jpg");
 
     @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url('../../images/team_laptop@2x.jpg');
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),url("../../images/team_laptop@2x.jpg");
+    }
   }
-}
 
   @media (min-width: 1200px) {
     max-width: 1600px;
-    background-image: url("../../images/team_pc.jpg");
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),url("../../images/team_pc.jpg");
 
     @media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url('../../images/team_pc@2x.jpg');
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),url("../../images/team_pc@2x.jpg");
+    }
   }
-  }
-  }
+}
 
 .hero__title {
-  display:flex; 
+  display: flex;
   align-items: center;
   margin: 0 auto 30px auto;
   max-width: 360px;

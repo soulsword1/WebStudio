@@ -59,16 +59,18 @@
   display: none;
 }
 
-.nav__menu-btn.is-open .nav__menu-btn__close {
+.nav__menu-btn.is-open{
+  & .nav__menu-btn__close{
   display: block;
 }
 
-.nav__menu-btn.is-open .nav__menu-btn__menu {
+& .nav__menu-btn__menu {
   display: none;
 }
 
-.js-menu-container.is-open .nav__list-menu {
+& .nav__list-menu {
   display: block;
+}
 }
 
 .logo {
@@ -193,11 +195,6 @@
     color: $sub-color;
     transition: color 250ms $cubic;
 
-    &:hover,
-    &:focus {
-      color: $active-color;
-    }
-
     @media (min-width: 1200px) {
       align-items: center;
       justify-content: center;
@@ -207,6 +204,13 @@
 
 .nav__contacts-link {
   color: $body-color;
+
+  @media (min-width: 768px) {
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
+  }
 }
 
 .nav__contacts-link--active {
@@ -219,6 +223,11 @@
 
 .nav__list-menu-link {
   color: $sub-color;
+
+    &:hover,
+    &:focus {
+      color: $active-color;
+    }
   @media (min-width: 768px) {
     padding: 32px 0;
   }
