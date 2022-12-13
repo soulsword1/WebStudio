@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
 
-  width: 170px;
+  width: 210px;
   height: 92px;
 
   fill: $clients-color;
@@ -22,5 +22,13 @@
   &:focus {
     border-color: $active-color;
     fill: $active-color;
+  }
+
+  @media (min-width: 768px){
+    width: 226px;
+  }
+
+  @media (min-width: 1200px){
+    width: 170px;
   }
 }

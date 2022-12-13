@@ -442,6 +442,9 @@ p {
   color: #2196f3;
 }
 
+.nav__logo-mobile {
+  padding: 19px 0;
+}
 @media (min-width: 768px) {
   .nav__logo-mobile {
     display: none;
@@ -680,9 +683,7 @@ p {
 }
 .hero {
   margin: 0 auto;
-  padding: 200px 0;
-  min-width: 480px;
-  max-width: 480px;
+  padding: 118px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/team_mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -707,6 +708,7 @@ p {
 @media (min-width: 1200px) {
   .hero {
     max-width: 1600px;
+    padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/team_pc.jpg");
   }
 }
@@ -739,6 +741,7 @@ p {
 .hero__button {
   max-width: 200px;
   height: 50px;
+  padding: 10px 20px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -808,7 +811,7 @@ p {
   text-transform: uppercase;
   text-align: center;
 }
-@media (min-width: 76px) {
+@media (min-width: 768px) {
   .about__title {
     text-align: left;
   }
@@ -924,7 +927,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
@@ -934,6 +937,16 @@ p {
 .clients__svg:hover, .clients__svg:focus {
   border-color: #2196f3;
   fill: #2196f3;
+}
+@media (min-width: 768px) {
+  .clients__svg {
+    width: 226px;
+  }
+}
+@media (min-width: 1200px) {
+  .clients__svg {
+    width: 170px;
+  }
 }
 
 .social__list {
@@ -1018,12 +1031,14 @@ p {
   .footer--flex-laptop {
     display: flex;
     justify-content: center;
+    align-items: baseline;
   }
 }
 @media (min-width: 1200px) {
   .footer--flex {
     display: flex;
     text-align: start;
+    align-items: baseline;
   }
 }
 
@@ -1305,7 +1320,14 @@ p {
 .agreement {
   display: flex;
   justify-content: center;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
+}
+@media (min-width: 1200px) {
+  .agreement {
+    font-size: inherit;
+    line-height: 1.71;
+  }
 }
 
 .agreement__label {
